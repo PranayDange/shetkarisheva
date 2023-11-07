@@ -39,11 +39,7 @@ class ShetkariDefaultFragment : Fragment() {
                 id: Long
             ) {
                 val selectedSoil = soilArray[position]
-                Toast.makeText(
-                    requireContext(),
-                    "Selected soil: ${selectedSoil.name}",
-                    Toast.LENGTH_SHORT
-                ).show()
+                Toast.makeText(requireContext(), "Selected soil: ${selectedSoil.name}", Toast.LENGTH_SHORT).show()
             }
 
             override fun onNothingSelected(p0: AdapterView<*>?) {
